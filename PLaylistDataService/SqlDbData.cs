@@ -5,14 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using PlaylistModel;
 using System.Data.SqlClient;
-//Final
-namespace PlaylistDataService
 
+namespace PlaylistDataService
 {
     public class SqlDbData
     {
         string connectionString
-            = "Server = tcp:52.139.168.198,1433; Database = MusicPlaylist; User Id = sa; Password = LiamPogi123!";
+            = "Server = tcp:4.145.88.22,1433; Database = MusicPlaylist; User Id = sa; Password = Sagun123456789";
 
         SqlConnection sqlConnection;
 
