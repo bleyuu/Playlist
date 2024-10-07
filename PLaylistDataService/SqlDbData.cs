@@ -11,7 +11,7 @@ namespace PlaylistDataService
     public class SqlDbData
     {
         string connectionString
-            = "Server = tcp:4.145.88.22,1433; Database = MusicPlaylist; User Id = sa; Password = Sagun123456789";
+            = "Data Source=bleu\\SQLEXPRESS;Initial Catalog=MusicPlaylist;Integrated Security=True;";
 
         SqlConnection sqlConnection;
 
@@ -54,7 +54,7 @@ namespace PlaylistDataService
 
         public List<Playlist> GetPlaylistSorted(string sortBy)
         {
-            string selectStatement = $"SELECT name, genre, album, artists FROM playlists ORDER BY {sortBy}";
+            string selectStatement = $"SELECT name, genre, album, artists FROM playlist ORDER BY {sortBy}";
             SqlCommand selectCommand = new SqlCommand(selectStatement, sqlConnection);
 
             sqlConnection.Open();

@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PlaylistBusinessService\PlaylistBusinessService.csproj" />
     <ProjectReference Include="..\PLaylistDataService\PLaylistDataService.csproj" />
     <ProjectReference Include="..\PlaylistModel\PlaylistModel.csproj" />

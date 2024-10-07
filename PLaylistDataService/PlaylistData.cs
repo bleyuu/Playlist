@@ -23,7 +23,6 @@ namespace PlaylistDataService
             return sqlData.GetPlaylistByGenre(genre);
         }
 
-
         public List<Playlist> GetPlaylistSorted(string sortBy)
         {
             return sqlData.GetPlaylistSorted(sortBy);
